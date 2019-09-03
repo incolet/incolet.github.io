@@ -1,7 +1,7 @@
 function validateForm() {
     var name = document.forms["myForm"]["fullName"].value;
     var title = document.forms["myForm"]["title"].value;
-    var message = document.getElementById("myTextare").value;
+    var message = document.getElementById("myTextarea").value;
     var email = document.forms["myForm"]["email"].value;
 
     if (name == "" || name.length < 4) {
