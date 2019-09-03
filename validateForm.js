@@ -1,9 +1,9 @@
 function validateForm() {
     var name = document.forms["myForm"]["fullName"].value;
     var title = document.forms["myForm"]["title"].value;
-    var message = document.forms["myForm"]["message"].value;
+    var message = document.getElementById("myTextare").value;
     var email = document.forms["myForm"]["email"].value;
-    
+
     if (name == "" || name.length < 4) {
         alert("Name must be filled out also must be at least 4 letters");
         return false;
