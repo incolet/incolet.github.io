@@ -13,7 +13,7 @@ function validateForm() {
         return false;
     }
 
-    else if (message == "" || name.length < 20) {
+    else if (message == "" || message.length < 20) {
         alert("Message must be at least 20 letters");
         return false;
     }
