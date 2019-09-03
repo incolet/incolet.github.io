@@ -3,17 +3,18 @@ function validateForm() {
     var title = document.forms["myForm"]["title"].value;
     var message = document.forms["myForm"]["message"].value;
     var email = document.forms["myForm"]["email"].value;
+    
     if (name == "" || name.length < 4) {
         alert("Name must be filled out also must be at least 4 letters");
         return false;
     }
 
     else if (title == "" ) {
-        alert("Titld must be filled out ");
+        alert("Title must be filled out ");
         return false;
     }
 
-    else if (message == "" || message.length < 20) {
+    else if (message.length < 20) {
         alert("Message must be at least 20 letters");
         return false;
     }
